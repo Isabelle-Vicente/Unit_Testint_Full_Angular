@@ -9,6 +9,7 @@ describe("Spy", () => {
     const calc = new CalcServiceSpy(shared);
     const result = calc.multiply(3, 5);
     expect(shared.mySharedFunction).toHaveBeenCalled();
+    expect(shared.mySharedFunction).toHaveBeenCalledTimes(1);
   });
 
   it("should call the mySharedFuntion func secure", () =>{
@@ -21,5 +22,6 @@ describe("Spy", () => {
     //expect(shared.mySharedFunction).toHaveBeenCalled();
     expect(result).toBe(15);
   });
+  
 
 });
