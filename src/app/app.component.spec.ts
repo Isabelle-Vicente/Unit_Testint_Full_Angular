@@ -26,4 +26,8 @@ xdescribe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('unit_testing app is running!');
   });
+
+  it('should render title', () => {
+    
+  });
 });
